@@ -1,0 +1,488 @@
+body {
+	background-color: #ffff80;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 1.2rem;
+	color: #333366;
+	overflow-x: hidden;
+}
+
+header, nav, article, footer, .content, .col {
+	width: 80%;
+	background: #ffffff;
+	margin: 0 auto;
+	padding: 20px;
+}
+ul, li, a {
+	text-decoration: none;
+	color: #000000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+ul.rubriki li {
+	display: block;
+	list-style: circle;
+	width: 80%;
+	background: #ffffff;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.rubriki a {
+	color: #000099;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.fa  {
+	margin-right: 10px;
+}
+
+.clients {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	border: 6px solid #6666ff;
+	margin: 10px;
+
+}
+.clients img {
+	width: 100%;
+	border-radius: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	display: inline-block;
+
+}
+.image img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.review {
+	position: relative;
+	display: inline-block;
+}
+
+article .rubriki {
+	position: relative;
+    left: 32%;
+    width: 70%;
+
+}
+
+.logo {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	/*font-weight: bold;*/
+	/*margin-left: 8px;*/
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Rubik Mono One', sans-serif;
+	color: #000099;
+
+}
+.jumbotron p, footer p {
+	/*margin-left: 10px;*/
+	text-align: center;
+	margin-top: 0;
+	color: #000099;
+	font-weight: bold;
+	font-size: 1.2rem;
+	letter-spacing:1px;
+
+
+}
+
+.jumbotron {
+	width: 80%;
+	height: 280px;
+	background: url(../img/rosana_wokers.png) no-repeat left bottom;
+	background-size: 300%;
+	background-color: #ffffff;
+
+}
+
+.tell {
+	text-align: center;
+	color: #000099;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: 30px;
+	
+}
+
+.mini-nav {
+	display: none;
+	position: relative;
+    top: -60px;
+    right: 5px;
+    z-index: 11;
+    float: right;
+    width: 25%;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.mini-nav a {
+	margin-right: 0px;
+	color: #000099;
+}
+.mini-nav a:hover {
+	font-weight: bold;
+}
+
+.main-nav {
+	width: 100%;
+    height: 51px;
+    padding: 0;
+    background-color: #000099;
+    text-align: center;
+
+
+}
+
+.main-nav a {
+	color: #ffffff;
+    /* margin-right: 10px; */
+    padding: 10px 45px;
+    height: 30px;
+    background-color: #000099;
+    transition-duration: 0.5s;
+
+}
+
+.main-nav a.active {
+	background-color: #ffff80;
+	color: #000099;
+	font-weight: bold;
+	/*visibility: visible;*/
+}
+
+.main-nav a:hover {
+	background-color: #0000e6;
+	color: #ffffff;
+	font-weight: bold;
+	/*transition: width 2s;*/
+}
+
+.main-nav ul {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	visibility: hidden;
+}
+
+.cmn-toggle-switch, .gamburger_menu {
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 90px;
+  height: 51px;
+  font-size: 0;
+  text-indent: -9999px;
+  background: #000099;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  right: 18px;
+  height: 6px;
+  background: #ffffff;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background:  #ffffff;
+  content: "";
+}
+
+.cmn-toggle-switch span::before {
+  top: -15px;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: -15px;
+}
+
+.gamburger_menu {
+	width: 65%;
+	height: 51px;
+	background-color: #ffff80;
+	border: none;
+	
+}
+
+
+
+article p {
+	padding-left: 10px; 
+	text-align: justify;
+	margin: 10px 0;
+
+}
+article h1 {
+	color: #000099;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 10px;
+	font-size: 1.12rem;
+
+}
+
+article h1:before {
+	content: '185';
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	background-color: #000099;
+	margin-right: 20px;
+}
+
+footer {
+	width: 100%;
+	background-color: #000099;
+	color: #ffffff;
+}
+
+footer .logo, footer p {
+	color: #ffffff;
+}
+.address {
+	height: 70vh;
+}
+.adr:hover {
+	width: 100%;
+}
+
+
+
+
+/*Для смартфонов и маленьких планшетов*/
+
+@media screen and (min-width:460px) {
+
+	.logo {
+	font-size: 2rem;
+	margin-left: 8px;
+	text-align: left;
+
+
+	}
+	.jumbotron p, footer p {
+		margin-left: 10px;
+		text-align: left;
+		font-size: 1rem;
+	}
+
+
+
+	.mini-nav {
+		display: block;
+	    top: -79px;
+	    line-height: 1.5;
+	    padding: 0;
+	}
+
+	.tell {
+		width: 60%;
+		margin: auto;
+		margin-top: 30px;
+
+	}
+
+	.main-nav ul {
+		display: block;
+		visibility: hidden;
+
+	}
+
+	/*.active {
+		visibility: visible;
+
+	}*/
+
+	article p {
+		position: relative;
+		left: 50px;
+		width: 75%;
+		border-left: 5px solid #ffff80;
+	}
+
+	article h1 {
+		
+		font-size: 1.8rem;
+
+	}
+
+}
+
+ /*для планшетов средние размеры от 610px*/
+
+@media screen and (min-width:610px) {
+
+	.logo {
+		font-size: 2.5rem;
+		margin-left: 8px;
+		margin-top: 20px;
+	}
+	.jumbotron p, footer p {
+		margin-left: 10px;
+		margin-top: 0;
+		font-size: 1.25rem;
+	}
+
+	.mini-nav {
+		display: block;
+		top: -90px;
+	    width: 45%;
+
+	}
+
+	.mini-nav a {
+		margin-right: 10px;
+	}
+
+	.tell {
+		position: relative;
+	    float: right;
+	    top: -103px;
+	    left: 14px;
+
+	}
+
+	.main-nav ul {
+		width: 90%;
+		visibility: visible;
+
+	}
+
+	.main-nav a {
+		/*display: block;*/
+		padding: 10px 7px;
+		font-size: 1.1rem;
+    }
+
+     .main-nav button {
+    	display: none;
+    }
+
+
+    article p {
+		left: 80px;
+	
+	}
+
+	.clients {
+		display: inline-block;
+	}
+
+}
+
+/*для компов большые размеры от 810px*/
+@media screen and (min-width:810px) {
+	.logo {
+		font-size: 3.5rem;
+		margin-left: 8px;
+		margin-top: 20px;
+	}
+	.jumbotron p, footer p {
+		margin-left: 10px;
+		margin-top: 0;
+		font-size: 1.65rem;
+	}
+
+	.jumbotron {
+		background-size: 140%;
+	}
+
+	.mini-nav {
+		top:-120px;
+		width: 40%;
+		font-size: 0.85rem;
+	    
+	}
+		.mini-nav a {
+		margin-right: 15px;
+	}
+
+	.tell {
+		position: relative;
+	    float: right;
+	    top: -98px;
+	    left: 210px;
+	    width: 30%;
+
+	}
+
+	.main-nav a {
+	padding: 10px 15px;
+    }
+
+     .main-nav button {
+    	display: none;
+    }
+
+
+    article p {
+		left: 100px;
+	
+	}
+}
+
+	/*для компов  очень большые размеры от 1115px*/
+@media screen and (min-width:1115px) {
+
+	.jumbotron {
+		background-size: 100%;
+	}
+
+	.main-nav a {
+	padding: 10px 40px;
+    }
+
+    .main-nav button {
+    	display: none;
+    }
+
+
+
+    
+}
+
+
+
+
